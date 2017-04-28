@@ -1,0 +1,4 @@
+--smart-case
+--ignore-file=ext:tags
+--ignore-file=ext:tags_swap
+--ignore-file=is:qmap.py
