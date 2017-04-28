@@ -1,0 +1,5 @@
+--python-kinds=-i
+--exclude=*.min.js
+--exclude=*.min.css
+--exclude=vendors
+--exclude=python2.7
