@@ -1,0 +1,23 @@
+[user]
+    name = Nikolay Panov
+    email = github@npanov.com
+[push]
+    default = current
+[color]
+    branch = true
+    diff = true
+    grep = true
+    pager = true
+    status = true
+    ui = always
+[alias]
+    br = branch
+    ec = config --global -e
+    po = push origin
+    p = pull origin master --rebase
+    undo = checkout --
+    unstage = reset HEAD --
+    uncommit = reset --soft HEAD~1
+    unmerge = reset --hard ORIG_HEAD
+    brclean = !git checkout master && git branch --no-color --merged | grep -v '\\*' | xargs -n 1 git branch -d
+    cs = !git commit --squash $@
