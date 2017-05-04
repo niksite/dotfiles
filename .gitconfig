@@ -15,6 +15,7 @@
     ec = config --global -e
     po = push origin
     p = pull origin master --rebase
+    ignore = update-index --assume-unchanged
     undo = checkout --
     unstage = reset HEAD --
     uncommit = reset --soft HEAD~1
