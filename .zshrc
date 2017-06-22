@@ -1,3 +1,4 @@
+export DJANGO_SETTINGS_MODULE='settings'
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONPATH=$PYTHONPATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -26,3 +27,7 @@ alias dc='docker-compose'
 alias ff='noglob find . -name'
 alias vz='vim ~/.zshrc'
 alias copy2='scp `git ls-files -m`'
+alias pt='py.test -vv --looponfail --cov-report html --cov-config ~/.coveragerc --cov .'
+
+# source ~/env/bin/activate
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
