@@ -1,0 +1,145 @@
+"*":
+  Hydrogen:
+    startupCode: "{\"Python 2\": \"import django\\ndjango.setup()\\n\"}"
+  "atom-beautify":
+    css:
+      convert_quotes: "single"
+      default_beautifier: "Pretty Diff"
+      force_indentation: true
+    general:
+      _analyticsUserId: ""
+    html:
+      default_beautifier: "Pretty Diff"
+    js:
+      indent_size: 4
+      jslint_happy: true
+    json:
+      brace_style: "expand"
+      jslint_happy: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      unescape_strings: true
+    python:
+      sort_imports: true
+    scss:
+      convert_quotes: "single"
+      force_indentation: true
+      no_lead_zero: true
+  "atom-python-test":
+    executeDocTests: true
+    outputColored: true
+  "autocomplete-python":
+    fuzzyMatcher: false
+    useKite: false
+  core:
+    disabledPackages: [
+      "last-cursor-position"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "*.pyc"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
+    titleBar: "hidden"
+  editor:
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: ""
+  "git-blame":
+    columnWidth: 290
+    customCommitUrlTemplateString: ""
+    showOnlyLastNames: false
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  "git-plus":
+    commits:
+      verboseCommits: true
+    diffs:
+      syntaxHighlighting: false
+      wordDiff: false
+    experimental:
+      diffBranches: true
+      useSplitDiff: true
+    general:
+      _analyticsUserId: ""
+      analytics: false
+      splitPane: "Right"
+    remoteInteractions:
+      pullBeforePush: true
+  "goto-definition":
+    contextMenuDisplayAtFirst: false
+    performanceMode: true
+  linter:
+    lintOnChangeInterval: 500
+  "linter-eslint":
+    fixOnSave: true
+  "linter-pylama":
+    ignoreErrorsAndWarnings: "C1001,D203,D212,D213"
+    useIsort: true
+  "linter-pylint":
+    executablePath: ""
+    pythonPath: ""
+    rcFile: "~/.pylintrc"
+    workingDirectory: ""
+  "linter-sass-lint":
+    configFile: "~/.sass-lint.yml"
+  "linter-ui-default":
+    showPanel: true
+  "linter-write-good":
+    severityLevel: "Warning"
+  "postcss-sorting":
+    preset: "smacss"
+  "spell-check":
+    addKnownWords: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.python"
+      "source.js"
+      "text.html.basic"
+    ]
+    knownWords: [
+      "django"
+      "views"
+      "generic"
+      "edit"
+      "shortcuts"
+      "conf"
+      "myacinfo"
+      "radarclient"
+      "urls"
+      "auth"
+      "decorators"
+      "contrib"
+      "urlpatterns"
+      "forms"
+      "utils"
+      "safestring"
+    ]
+  tabs:
+    enableMruTabSwitching: false
+    showIcons: false
+  "tree-view":
+    focusOnReveal: false
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+".breakpoints.hydrogen":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
