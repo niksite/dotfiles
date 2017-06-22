@@ -22,8 +22,8 @@
 
 '.source.js':
   'function':
-    'prefix': 'ff'
-    'body': 'function() {\n\t$1\n},'
+    'prefix': 'fun'
+    'body': 'function() {\n\t$1\n}'
   'backbone view':
     'prefix': 'bv'
     'body': """
@@ -46,5 +46,12 @@
         defaults: {
             $1
         }
+    });
+    """
+  'backbone collection':
+    'prefix': 'bc'
+    'body': """
+    Backbone.Collection.extend({
+        model: $1,
     });
     """
