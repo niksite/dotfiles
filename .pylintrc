@@ -1,2 +1,8 @@
 [MASTER]
 load-plugins=pylint_django
+
+[MESSAGES CONTROL]
+disable=R0201,R0901,C0103,I0011
+
+[TYPECHECK]
+ignored-classes=WSGIRequest
