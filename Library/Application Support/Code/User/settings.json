@@ -1,0 +1,17 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Monokai",
+    "files.insertFinalNewline": true,
+    "eslint.autoFixOnSave": true,
+    "htmlhint.options": {
+        "doctype-first": false
+    },
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "python.linting.pylintArgs": [
+        "--load-plugins", "pylint_django"
+    ],
+    "python.unitTest.pyTestEnabled": true,
+    "files.trimTrailingWhitespace": true
+}
