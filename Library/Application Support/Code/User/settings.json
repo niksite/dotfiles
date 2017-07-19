@@ -1,17 +1,14 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
     "editor.fontSize": 14,
-    "workbench.colorTheme": "Monokai",
-    "files.insertFinalNewline": true,
-    "eslint.autoFixOnSave": true,
-    "htmlhint.options": {
-        "doctype-first": false
-    },
     "editor.minimap.enabled": false,
-    "workbench.activityBar.visible": false,
+    "eslint.autoFixOnSave": true,
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "python.linting.pylintArgs": [
         "--load-plugins", "pylint_django"
     ],
-    "python.unitTest.pyTestEnabled": true,
-    "files.trimTrailingWhitespace": true
+    "python.pythonPath": "/Users/sisuser/afmd_ve_001/bin/python",
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile"
 }
