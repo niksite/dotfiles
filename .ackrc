@@ -4,3 +4,4 @@
 --ignore-file=is:qmap.py
 --ignore-file=match:\.coverage
 --ignore-dir=.vscode
+--ignore-dir=.cache
