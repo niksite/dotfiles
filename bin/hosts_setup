@@ -1,0 +1,22 @@
+#!/usr/bin/env ansible-playbook
+---
+# This playbook update .profile files on required hosts with proper
+# host role in the iTerm banner
+#
+# $ hosts_setup -i hosts_setup.hosts
+#
+# where hosts_setup.hosts supposed to be in the following format:
+# [dev]
+# host_name display='BADGE TEXT'
+# [dev:vars]
+# ansible_ssh_user=nik
+
+
+- name: Initial Configure of new hosts
+  hosts: all
+  tasks:
+    - name: put SetBadgeFormat to ~/.profile on all nodes
+      lineinfile:
+        path: ~/.profile
+        state: present
+        line: 'printf "\e]1337;SetBadgeFormat=%s\a" $(echo -n "{{display}}" | base64)'
