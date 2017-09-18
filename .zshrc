@@ -13,7 +13,8 @@ function on_prompt {
     printf "\e]1337;SetBadgeFormat=%s\a" $(echo -n "" | base64)
 }
 function on_exec {
-    printf "\e]1337;SetBadgeFormat=%s\a" $(echo -n "${2}" | base64)
+    cmd=$(echo "${1}" | cut -d ' ' -f 1-2)
+    printf "\e]1337;SetBadgeFormat=%s\a" $(echo -n "${cmd}" | base64)
 }
 add-zsh-hook preexec on_exec
 add-zsh-hook precmd on_prompt
