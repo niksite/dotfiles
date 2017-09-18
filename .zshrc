@@ -7,12 +7,16 @@ export ZSH=$HOME/.oh-my-zsh
 setopt HIST_FIND_NO_DUPS
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 autoload -U add-zsh-hook
-update_badge()
-{
+function on_prompt {
     printf "\e]1337;SetBadgeFormat=%s\a" $(echo -n "" | base64)
 }
-add-zsh-hook precmd update_badge
+function on_exec {
+    printf "\e]1337;SetBadgeFormat=%s\a" $(echo -n "${2}" | base64)
+}
+add-zsh-hook preexec on_exec
+add-zsh-hook precmd on_prompt
 
 ZSH_THEME="robbyrussell"
 plugins=(git django docker)
