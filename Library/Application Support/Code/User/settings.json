@@ -1,14 +1,68 @@
 {
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Menlo, Hasklig, Monaco, monospace",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 15,
     "editor.minimap.enabled": false,
     "eslint.autoFixOnSave": true,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "python.linting.pylintArgs": [
-        "--load-plugins", "pylint_django"
+        "--rcfile=~/.pylintrc"
     ],
-    "python.pythonPath": "/Users/sisuser/afmd_ve_001/bin/python",
+    "python.unitTest.pyTestEnabled": true,
     "workbench.colorTheme": "Monokai",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "none",
+    "git.confirmSync": false,
+    "terminal.integrated.fontLigatures": true,
+    "jupyter.appendResults": true,
+    "python.formatting.provider": "yapf",
+    "git.enableSmartCommit": true,
+    "cSpell.language": "en,ru",
+    "rest-client.enableTelemetry": false,
+    "rest-client.fontSize": 14,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.rulers": [
+        80
+    ],
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "cSpell.ignorePaths": [
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/**",
+        ".vscode",
+        "typings",
+        "**/site-packages/**",
+        "/System/**",
+        "**/Application Support/**"
+    ],
+    "window.restoreFullscreen": true,
+    "editor.formatOnPaste": false,
+    "editor.autoIndent": false,
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "csharp",
+        "go",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ],
+    "python.linting.mypyEnabled": true,
+    "workbench.iconTheme": "vs-minimal",
+    "window.zoomLevel": 0
 }
