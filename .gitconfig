@@ -22,3 +22,11 @@
     unmerge = reset --hard ORIG_HEAD
     brclean = !git checkout master && git branch --no-color --merged | grep -v '\\*' | xargs -n 1 git branch -d
     cs = !git commit --squash $@
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
