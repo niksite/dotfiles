@@ -12,5 +12,32 @@
     { "key": "cmd+6", "command": "workbench.action.openEditorAtIndex6" },
     { "key": "cmd+7", "command": "workbench.action.openEditorAtIndex7" },
     { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex8" },
-    { "key": "cmd+9", "command": "workbench.action.openEditorAtIndex9" }
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "python.sortImports"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.sortLinesAscending"
+    }
 ]
