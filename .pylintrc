@@ -1,5 +1,5 @@
 [MASTER]
-load-plugins=pylint_django
+load-plugins=pylint_django,pylint_django.checkers.db_performance
 
 [MESSAGES CONTROL]
 disable=R0201,R0901,C0103,I0011
