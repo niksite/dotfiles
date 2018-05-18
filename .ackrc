@@ -1,4 +1,5 @@
 --smart-case
+--ignore-file=ext:map
 --ignore-file=ext:tags
 --ignore-file=ext:tags_swap
 --ignore-file=is:qmap.py
@@ -6,3 +7,5 @@
 --ignore-dir=.vscode
 --ignore-dir=.cache
 --ignore-dir=.mypy_cache
+--ignore-dir=.pytest_cache
+--ignore-dir=bundles
