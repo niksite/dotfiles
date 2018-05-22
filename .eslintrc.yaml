@@ -1,0 +1,20 @@
+---
+  extends: [
+    "plugin:vue/recommended",
+    "standard"
+  ]
+  env:
+    browser: true
+    es6: true
+  plugins: [
+    "vue"
+  ]
+  rules:
+    no-new: 0
+    vue/html-closing-bracket-newline: ["error", {
+      "singleline": "never",
+      "multiline": "always"
+    }]
+  parserOptions:
+    parser: "babel-eslint"
+    ecmaVersion: 6
