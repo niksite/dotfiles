@@ -1,8 +1,12 @@
 [MASTER]
-load-plugins=pylint_django,pylint_django.checkers.db_performance
+load-plugins=pylint_django
 
 [MESSAGES CONTROL]
-disable=R0201,R0901,C0103,I0011
+disable=trailing-comma-tuple,
+    invalid-name,
+    no-member,
+    too-many-ancestors,
+    bad-continuation
 
 [TYPECHECK]
 ignored-classes=WSGIRequest
