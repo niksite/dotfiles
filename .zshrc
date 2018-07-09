@@ -25,6 +25,7 @@ source $ZSH/oh-my-zsh.sh
 alias gs='git status'
 alias gc='git checkout'
 alias gl='git log'
+alias gd='git diff --ignore-all-space'
 alias gdl='git diff HEAD^'
 alias gcm='git checkout master && git pull'
 alias gcd='git checkout develop && git pull'
