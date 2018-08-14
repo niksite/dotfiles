@@ -1,4 +1,5 @@
 [run]
-omit = */tests/*
-[html]
-directory = ~/htmlcov
+omit =
+  */settings/*
+  */tests/*
+  manage.py
