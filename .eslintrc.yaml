@@ -1,20 +1,24 @@
 ---
-  extends: [
-    "plugin:vue/recommended",
-    "standard"
-  ]
+  extends:
+    - plugin:vue/recommended
+    - standard
+    - plugin:promise/recommended
   env:
     browser: true
     es6: true
-  plugins: [
-    "vue"
-  ]
+  plugins:
+    - vue
   rules:
     no-new: 0
-    vue/html-closing-bracket-newline: ["error", {
-      "singleline": "never",
-      "multiline": "always"
-    }]
+    vue/html-closing-bracket-newline:
+      - 2
+      - singleline: never
+        multiline: always
+    promise/catch-or-return:
+      - 2
+      - terminationMethod:
+        - catch
+        - finally
   parserOptions:
     parser: "babel-eslint"
-    ecmaVersion: 6
+    ecmaVersion: 2019
