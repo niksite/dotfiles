@@ -1,32 +1,38 @@
 [user]
-    name = Nikolay Panov
-    email = github@npanov.com
+  name = Nikolay Panov
+  email = github@npanov.com
+[checkout]
+  defaultRemote = origin
 [push]
-    default = current
+  default = current
+[pull]
+  rebase = true
+[rebase]
+  autoStash = true
 [color]
-    branch = true
-    diff = true
-    grep = true
-    pager = true
-    status = true
-    ui = always
+  branch = true
+  diff = true
+  grep = true
+  pager = true
+  status = true
+  ui = always
 [alias]
-    br = branch
-    ec = config --global -e
-    po = push origin
-    p = pull origin master --rebase
-    ignore = update-index --assume-unchanged
-    undo = checkout --
-    unstage = reset HEAD --
-    uncommit = reset --soft HEAD~1
-    unmerge = reset --hard ORIG_HEAD
-    brclean = !git checkout master && git branch --no-color --merged | grep -v '\\*' | xargs -n 1 git branch -d
-    cs = !git commit --squash $@
+  br = branch
+  ec = config --global -e
+  po = push -u origin
+  pm = pull origin main --rebase
+  ignore = update-index --assume-unchanged
+  undo = checkout --
+  unstage = reset HEAD --
+  uncommit = reset --soft HEAD~1
+  unmerge = reset --hard ORIG_HEAD
+  brclean = !git checkout main && git branch --no-color --merged | grep -v '\\*' | xargs -n 1 git branch -d
+  cs = !git commit --squash $@
 [diff]
-    tool = default-difftool
+  tool = default-difftool
 [difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+  cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
-    tool = vscode
+  tool = vscode
 [mergetool "vscode"]
-    cmd = code --wait $MERGED
+  cmd = code --wait $MERGED
