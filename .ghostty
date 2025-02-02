@@ -1,2 +1,4 @@
 theme = "Monokai Remastered"
 font-size = 15
+copy-on-select = clipboard
+window-save-state = always
